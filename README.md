@@ -1,6 +1,6 @@
-##Empresa de Demolición con Patos
+## Empresa de Demolición con Patos
 
-#Tienes que demoler edificios usando patos, los edificios tienen una masa dependiendo del tamaño, los patos tienen munición limitada, tienen una fuerza de lanzamiento y el objetivo es llegar a un límite de demolición para ganar
+# Tienes que demoler edificios usando patos, los edificios tienen una masa dependiendo del tamaño, los patos tienen munición limitada, tienen una fuerza de lanzamiento y el objetivo es llegar a un límite de demolición para ganar
 
 DemolitionTracker se encarga de trackear cuantos edificios han sido demolidos, registra los bloques de la clase que se encarga de gestionarlos y decide cuando ganas con una formula
 GameManager se encarga del estado del juego con la información que recibe DemolitionTracker
