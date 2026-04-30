@@ -8,7 +8,7 @@ public class DuckLauncher : MonoBehaviour
     [SerializeField] float launchForce = 25f;
     [SerializeField] int duckCount = 5;
 
-    // trajectory preview
+    //trajectoria NO TOCAR
     [SerializeField] LineRenderer trajectoryLine;
     [SerializeField] int trajectorySteps = 30;
     [SerializeField] float trajectoryTimeStep = 0.1f;
@@ -57,7 +57,7 @@ public class DuckLauncher : MonoBehaviour
 
     Vector3 GetAimDirection()
     {
-        // cast a ray from the camera through the mouse cursor onto a vertical plane at the target distance
+        // RAYCAST DEL DISPARO
         Ray ray = mainCam.ScreenPointToRay(Mouse.current.position.ReadValue());
         float dist = Vector3.Distance(launchPoint.position, mainCam.transform.position) + 10f;
         Vector3 target = ray.GetPoint(dist);

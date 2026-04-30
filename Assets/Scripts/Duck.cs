@@ -3,8 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Duck : MonoBehaviour
 {
-    [SerializeField] float explosionForce = 600f;
-    [SerializeField] float explosionRadius = 4f;
+    [SerializeField] float explosionForce = 30f;
+    [SerializeField] float explosionRadius = 1f;
     [SerializeField] float lifetime = 6f;
 
     Rigidbody rb;

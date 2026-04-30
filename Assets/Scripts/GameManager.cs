@@ -4,6 +4,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    //estados y clases
     public enum State { Playing, Won, Lost }
     public State CurrentState { get; private set; } = State.Playing;
 
@@ -13,13 +14,15 @@ public class GameManager : MonoBehaviour
     {
         if (CurrentState != State.Playing) return;
         CurrentState = State.Won;
-        Debug.Log($"Victory! {DemolitionTracker.Instance.DemolitionPercent:P0} demolished.");
+        Debug.Log("VICTORIA");
+        Debug.Log(DemolitionTracker.Instance.DemolitionPercent);
     }
 
     public void OnDucksExhausted()
     {
         if (CurrentState != State.Playing) return;
         CurrentState = State.Lost;
-        Debug.Log($"Out of ducks. {DemolitionTracker.Instance.DemolitionPercent:P0} demolished.");
+        Debug.Log("HAS PERDIDO");
+        Debug.Log(DemolitionTracker.Instance.DemolitionPercent);
     }
 }

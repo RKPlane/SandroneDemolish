@@ -12,7 +12,20 @@ public class DemolitionTracker : MonoBehaviour
     int demolishedBlocks;
     readonly HashSet<StructureBlock> registered = new();
 
-    public float DemolitionPercent => totalBlocks > 0 ? (float)demolishedBlocks / totalBlocks : 0f;
+    public float DemolitionPercent
+    {
+        get
+        {
+            if (totalBlocks > 0)
+            {
+                return (float)demolishedBlocks / totalBlocks;
+            }
+            else
+            {
+                return 0f;
+            }
+        }
+    }
 
     void Awake() => Instance = this;
 
