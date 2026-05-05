@@ -8,6 +8,6 @@ DuckLauncher es el que se encarga de que se lanza, con que fuerza, donde y la tr
 Duck es la clase del pato donde añade una fuerza al colisionar para dar ese efecto de explosión alrededor de este.
 StructureBlock es la clase que se encarga de enviar información a DemolitionTracker de que efectivamente se han demolido los edificios.
 
-Lucia y Sergi: Montado de nivel y Operaciones como fuerza, masa y cálculos para que la demolición se sienta bien
-Luis: Menu e info printeado en la screen
+\Lucia y Sergi: Montado de nivel y Operaciones como fuerza, masa y cálculos para que la demolición se sienta bien
+\Luis: Menu e info printeado en la screen
 Alberto: Main code
