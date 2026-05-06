@@ -8,8 +8,12 @@ public class GameManager : MonoBehaviour
     public enum State { Playing, Won, Lost }
     public State CurrentState { get; private set; } = State.Playing;
 
-    void Awake() => Instance = this;
-
+   
+   private void Awake()
+    { 
+            Instance = this;
+     
+    }
     public void OnDemolitionComplete()
     {
         if (CurrentState != State.Playing) return;
@@ -24,5 +28,10 @@ public class GameManager : MonoBehaviour
         CurrentState = State.Lost;
         Debug.Log("HAS PERDIDO");
         Debug.Log(DemolitionTracker.Instance.DemolitionPercent);
+    }
+
+    public void NextLevel()
+    {
+
     }
 }
