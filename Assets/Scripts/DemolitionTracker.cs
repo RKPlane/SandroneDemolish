@@ -18,7 +18,7 @@ public class DemolitionTracker : MonoBehaviour
         {
             if (totalBlocks > 0)
             {
-                return (float)demolishedBlocks / totalBlocks;
+                return (float)demolishedBlocks % totalBlocks;
             }
             else
             {
