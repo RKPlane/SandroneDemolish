@@ -17,17 +17,19 @@ public class DemolitionTracker : MonoBehaviour
         get
         {
             if (totalBlocks > 0)
-            {
-                return (float)demolishedBlocks % totalBlocks;
-            }
+                return (float)demolishedBlocks / totalBlocks;
             else
-            {
                 return 0f;
-            }
         }
     }
 
-    void Awake() => Instance = this;
+    public int TotalBlocks => totalBlocks;
+    public int DemolishedBlocks => demolishedBlocks;
+
+    void Awake()
+    {
+        Instance = this;
+    }
 
     public void Register(StructureBlock block)
     {
@@ -44,6 +46,9 @@ public class DemolitionTracker : MonoBehaviour
     public void OnBlockDemolished()
     {
         demolishedBlocks++;
+
+        GameManager.Instance.OnDemolitionUpdated();
+
         if (DemolitionPercent >= winThreshold)
             GameManager.Instance.OnDemolitionComplete();
     }
