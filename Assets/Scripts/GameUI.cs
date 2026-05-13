@@ -12,7 +12,6 @@ public class GameUI : MonoBehaviour
 	[Header("Panel de Victoria")]
 	[SerializeField] GameObject wonPanel;
 	[SerializeField] TextMeshProUGUI wonPercentText;
-	[SerializeField] Button nextLevelButton;
 
 	[Header("Panel de Derrota")]
 	[SerializeField] GameObject lostPanel;
@@ -49,9 +48,9 @@ public class GameUI : MonoBehaviour
 	{
 		if (GameManager.Instance.CurrentState != GameManager.State.Playing) return;
 
-		/* DUCK LAUNCHER
-		 * if (ducksText != null && duckLauncher != null)
-			ducksText.text = $"Patos: {duckLauncher.DucksRemaining}"; */
+		//DUCK LAUNCHER
+		if (ducksText != null && duckLauncher != null)
+			ducksText.text = $"Patos restantes: {duckLauncher.duckCount}";
 	}
 
 	void UpdateHUD()
