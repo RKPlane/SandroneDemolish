@@ -19,8 +19,6 @@ public class DuckLauncher : MonoBehaviour
 
     public int DucksRemaining => duckCount;
 
-    public event System.Action<int> OnDuckCountChanged;
-
     Camera mainCam;
 
     void Awake()

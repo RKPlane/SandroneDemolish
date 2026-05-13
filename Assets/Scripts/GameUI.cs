@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
+using System.Threading;
+using System.Collections;
 
 public class GameUI : MonoBehaviour
 {
@@ -17,6 +20,8 @@ public class GameUI : MonoBehaviour
 	[SerializeField] GameObject lostPanel;
 	[SerializeField] TextMeshProUGUI lostPercentText;
 	[SerializeField] Button retryButton;
+
+    [SerializeField] public string SceneLoader;
 
 	DuckLauncher duckLauncher;
 
@@ -64,17 +69,31 @@ public class GameUI : MonoBehaviour
 			demolitionBar.value = DemolitionTracker.Instance.DemolitionPercent;
 	}
 
-	void HandleWon()
-	{
-		wonPanel.SetActive(true);
-		if (wonPercentText != null)
-			wonPercentText.text = $"¡Demolido un {DemolitionTracker.Instance.DemolitionPercent * 100f:F1}%!";
-	}
+    void HandleWon()
+    {
+        wonPanel.SetActive(true);
+        if (wonPercentText != null)
+            wonPercentText.text = $"¡Demolido un {DemolitionTracker.Instance.DemolitionPercent * 100f:F1}%!";
+        StartCoroutine(LoadSceneAfterDelay(SceneLoader, 3f));
+    }
 
-	void HandleLost()
-	{
-		lostPanel.SetActive(true);
-		if (lostPercentText != null)
-			lostPercentText.text = $"Solo demoliste el {DemolitionTracker.Instance.DemolitionPercent * 100f:F1}%...";
-	}
+    void HandleLost()
+    {
+        lostPanel.SetActive(true);
+        if (lostPercentText != null)
+            lostPercentText.text = $"Solo demoliste el {DemolitionTracker.Instance.DemolitionPercent * 100f:F1}%...";
+        StartCoroutine(LoadSceneAfterDelay(SceneManager.GetActiveScene().buildIndex, 3f));
+    }
+
+    IEnumerator LoadSceneAfterDelay(string sceneIndex, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneIndex);
+    }
+
+    IEnumerator LoadSceneAfterDelay(int sceneIndex, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneIndex);
+    }
 }

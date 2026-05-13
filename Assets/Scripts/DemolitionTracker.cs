@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class DemolitionTracker : MonoBehaviour
@@ -8,8 +9,12 @@ public class DemolitionTracker : MonoBehaviour
     [Range(0f, 1f)]
     [SerializeField] float winThreshold = 0.8f;
 
+    [SerializeField] float winDelay = 2f;
+
     int totalBlocks;
     int demolishedBlocks;
+    bool winPending;
+
     readonly HashSet<StructureBlock> registered = new();
 
     public float DemolitionPercent
@@ -46,10 +51,19 @@ public class DemolitionTracker : MonoBehaviour
     public void OnBlockDemolished()
     {
         demolishedBlocks++;
-
         GameManager.Instance.OnDemolitionUpdated();
 
-        if (DemolitionPercent >= winThreshold)
+        if (!winPending && DemolitionPercent >= winThreshold)
+        {
+            winPending = true;
+            StartCoroutine(WinAfterDelay());
+        }
+    }
+
+    IEnumerator WinAfterDelay()
+    {
+        yield return new WaitForSeconds(winDelay);
+        if (GameManager.Instance.CurrentState == GameManager.State.Playing)
             GameManager.Instance.OnDemolitionComplete();
     }
 }

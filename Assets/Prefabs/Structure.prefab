@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5326638706245119970}
   - component: {fileID: 8121615104910464910}
   - component: {fileID: 5425200384718074037}
-  - component: {fileID: 6389199489969823081}
   - component: {fileID: 3812892570073217255}
+  - component: {fileID: 1732467228409773444}
   m_Layer: 0
   m_Name: Structure
   m_TagString: Untagged
@@ -122,9 +122,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5424597468785738390}
   serializedVersion: 5
-  m_Mass: 50
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_Mass: 20
+  m_LinearDamping: 0.05
+  m_AngularDamping: 0.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -141,27 +141,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6389199489969823081
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5424597468785738390}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3812892570073217255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,4 +153,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ff712e195cf3eb48861442196001226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StructureBlock
+  density: 2400
+  connectionRadius: 1
+  jointBreakForce: 6000
+  jointBreakTorque: 6000
+  autoThreshold: 1
   demolishThreshold: 0.5
+  thresholdMultiplier: 0.45
+--- !u!138 &1732467228409773444
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5424597468785738390}
+  serializedVersion: 1
+  m_ConnectedBody: {fileID: 0}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_BreakForce: 6000
+  m_BreakTorque: 6000
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1

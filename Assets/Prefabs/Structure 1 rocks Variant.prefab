@@ -48,6 +48,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: m_BreakForce
+      value: 8000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: m_BreakTorque
+      value: 8000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812892570073217255, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: density
+      value: 2400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812892570073217255, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: jointBreakForce
+      value: 12000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812892570073217255, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: connectionRadius
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812892570073217255, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: jointBreakTorque
+      value: 12000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812892570073217255, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: thresholdMultiplier
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5326638706245119970, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -58,10 +86,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5425200384718074037, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
       propertyPath: m_Mass
-      value: 30
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425200384718074037, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5424597468785738390, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5036806392106269229}
   m_SourcePrefab: {fileID: 100100000, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+--- !u!1 &2845265451504385633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5424597468785738390, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+  m_PrefabInstance: {fileID: 7796966197385837815}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5036806392106269229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2845265451504385633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e83589ccf7b37a4e8fb9150dfe87d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuildingAnchor
+  anchorBreakForce: 8000
+  anchorBreakTorque: 8000
