@@ -222,8 +222,8 @@ FixedJoint:
   serializedVersion: 1
   m_ConnectedBody: {fileID: 820034663}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 6000
+  m_BreakTorque: 6000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
@@ -428,6 +428,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: m_BreakForce
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: m_BreakTorque
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 1705999713}
@@ -470,7 +478,7 @@ FixedJoint:
   m_ConnectedBody: {fileID: 557013454}
   m_ConnectedArticulationBody: {fileID: 0}
   m_BreakForce: 5000
-  m_BreakTorque: Infinity
+  m_BreakTorque: 5000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
@@ -627,6 +635,14 @@ PrefabInstance:
     - target: {fileID: 951061783843406877, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: m_BreakForce
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: m_BreakTorque
+      value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
       propertyPath: m_ConnectedBody
@@ -1027,6 +1043,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: m_BreakForce
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: m_BreakTorque
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 1583983186}
@@ -1370,8 +1394,8 @@ FixedJoint:
   serializedVersion: 1
   m_ConnectedBody: {fileID: 1697156265}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 6000
-  m_BreakTorque: 6000
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
@@ -1454,8 +1478,8 @@ FixedJoint:
   serializedVersion: 1
   m_ConnectedBody: {fileID: 587947794}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 10000
+  m_BreakTorque: 10000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
@@ -1629,6 +1653,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: m_BreakForce
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: m_BreakTorque
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 797049653}
@@ -1692,6 +1724,14 @@ PrefabInstance:
     - target: {fileID: 951061783843406877, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: m_BreakForce
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
+      propertyPath: m_BreakTorque
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 1732467228409773444, guid: c4a923ff631154445bbeb168ae5d1bb6, type: 3}
       propertyPath: m_ConnectedBody
@@ -2104,8 +2144,8 @@ FixedJoint:
   serializedVersion: 1
   m_ConnectedBody: {fileID: 2025089332}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
