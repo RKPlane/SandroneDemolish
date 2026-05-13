@@ -1462,7 +1462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DuckLauncher
   duckPrefab: {fileID: 1177829597563050155, guid: 06b0ca18ad8963d4389f0b7d47226d27, type: 3}
   launchPoint: {fileID: 2144222170}
-  launchForce: 75
+  launchForce: 50
   duckCount: 5
   trajectoryLine: {fileID: 1772678956}
   trajectorySteps: 30

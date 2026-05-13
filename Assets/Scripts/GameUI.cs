@@ -36,7 +36,6 @@ public class GameUI : MonoBehaviour
 		wonPanel.SetActive(false);
 		lostPanel.SetActive(false);
 
-		retryButton.onClick.AddListener(GameManager.Instance.RestartLevel);
 	}
 
 	void OnDestroy()
