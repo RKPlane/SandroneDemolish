@@ -6,7 +6,7 @@ public class DuckLauncher : MonoBehaviour
     [SerializeField] GameObject duckPrefab;
     [SerializeField] Transform launchPoint;
     [SerializeField] float launchForce = 25f;
-    [SerializeField] int duckCount = 5;
+    [SerializeField] public int duckCount = 5;
 
     //trajectoria NO TOCAR
     [SerializeField] LineRenderer trajectoryLine;
