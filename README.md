@@ -12,3 +12,5 @@ Lucia: Montado de nivel y Operaciones como fuerza, masa y cálculos para que la 
 Luis: Menu e info printeado en la screen<br/>
 Alberto: Code de las formulas<br/>
 Sergi: Calculo de la fuerza y trayectoria Code<br/>
+
+Video Gameplay: https://youtu.be/mhpoIuXAfTk
