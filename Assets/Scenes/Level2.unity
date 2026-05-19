@@ -2290,7 +2290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23d7163724cdeb49b765d6e39b754de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DuckLauncher
-  duckPrefab: {fileID: 1177829597563050155, guid: 06b0ca18ad8963d4389f0b7d47226d27, type: 3}
+  duckPrefab: {fileID: 7603160502854675457, guid: 06b0ca18ad8963d4389f0b7d47226d27, type: 3}
   launchPoint: {fileID: 2144222170}
   launchForce: 40
   duckCount: 5
