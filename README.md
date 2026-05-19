@@ -17,4 +17,4 @@ Luis: Menu e info printeado en la screen<br/>
 Alberto: Code de las formulas<br/>
 Sergi: Calculo de la fuerza y trayectoria Code<br/>
 
-Video Gameplay: https://youtu.be/mhpoIuXAfTk
+Video Gameplay: https://youtu.be/ByXBCKBQIOs
